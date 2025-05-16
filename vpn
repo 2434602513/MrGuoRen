@@ -1,0 +1,110 @@
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+
+- name: 日本vmess-ws-tls
+  type: vmess
+  server: cf.020912.xyz
+  port: 2087
+  uuid: 35c9a0d8-d59f-475d-87eb-db8424eb2712
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: jp.020912.xyz
+  ws-opts:
+    path: "/guoren"
+    headers:
+      Host: jp.020912.xyz
+
+- name: 香港vmess-ws-tls
+  type: vmess
+  server: cf.020912.xyz
+  port: 2053
+  uuid: 6f2863cd-cb74-4df1-e62d-e08955ea17c0
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: hk.020912.xyz
+  ws-opts:
+    path: "/guoren"
+    headers:
+      Host: hk.020912.xyz
+
+- name: （双栈）香港vmess-ws-tls
+  type: vmess
+  server: cf.0sm.com
+  port: 2083
+  uuid: b13b686f-9e4c-4cb9-e7ff-96a705124f69
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: ws
+  servername: hk2.020912.xyz
+  ws-opts:
+    path: "/guoren"
+    headers:
+      Host: hk2.020912.xyz
+
+- name: 香港ss-tcp
+  type: ss
+  server: hk.020912.xyz
+  port: 24490
+  password: c0cwMnhUR015Sm1GdThuTnZTRUlrYlkxVzFXTktVMk4=
+  cipher: aes-256-gcm
+  udp: true
+
+- name: 香港trojan-tcp-tls
+  type: trojan
+  server: hk.020912.xyz
+  port: 39530
+  password: HkEjxZUSV5
+  udp: true
+  sni: hk.020912.xyz
+  skip-cert-verify: false
+
+- name: （双栈）香港ss-tcp
+  type: ss
+  server: hk2.020912.xyz
+  port: 24490
+  password: c0cwMnhUR015Sm1GdThuTnZTRUlrYlkxVzFXTktVMk4=
+  cipher: aes-256-gcm
+  udp: true
+
+- name: （双栈）香港trojan-tcp-tls
+  type: trojan
+  server: hk2.020912.xyz
+  port: 39530
+  password: HkEjxZUSV5
+  udp: true
+  sni: hk2.020912.xyz
+  skip-cert-verify: false
