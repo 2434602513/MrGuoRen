@@ -29,7 +29,7 @@ proxies:
 
 - name: 香港vmess-ws-tls
   type: vmess
-  server: cf.020912.xyz
+  server: cf.0sm.com
   port: 2053
   uuid: 988364b9-3cdb-401d-c752-2973c746d719
   alterId: 0
