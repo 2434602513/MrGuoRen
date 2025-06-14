@@ -27,27 +27,11 @@ dns:
 
 proxies:
 
-- name: 日本vmess-ws-tls
-  type: vmess
-  server: cf.020912.xyz
-  port: 2087
-  uuid: 35c9a0d8-d59f-475d-87eb-db8424eb2712
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  servername: jp.020912.xyz
-  ws-opts:
-    path: "/guoren"
-    headers:
-      Host: jp.020912.xyz
-
 - name: 香港vmess-ws-tls
   type: vmess
   server: cf.020912.xyz
   port: 2053
-  uuid: 6f2863cd-cb74-4df1-e62d-e08955ea17c0
+  uuid: 988364b9-3cdb-401d-c752-2973c746d719
   alterId: 0
   cipher: auto
   udp: true
@@ -59,52 +43,10 @@ proxies:
     headers:
       Host: hk.020912.xyz
 
-- name: （双栈）香港vmess-ws-tls
-  type: vmess
-  server: cf.0sm.com
-  port: 2083
-  uuid: b13b686f-9e4c-4cb9-e7ff-96a705124f69
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  servername: hk2.020912.xyz
-  ws-opts:
-    path: "/guoren"
-    headers:
-      Host: hk2.020912.xyz
-
 - name: 香港ss-tcp
   type: ss
   server: hk.020912.xyz
-  port: 24490
-  password: c0cwMnhUR015Sm1GdThuTnZTRUlrYlkxVzFXTktVMk4=
+  port: 42541
+  password: ZnZ3Ykp4V1VDZVJERmxGcmgwYTNIejR5Yng3RTd3NXc=
   cipher: aes-256-gcm
   udp: true
-
-- name: 香港trojan-tcp-tls
-  type: trojan
-  server: hk.020912.xyz
-  port: 39530
-  password: HkEjxZUSV5
-  udp: true
-  sni: hk.020912.xyz
-  skip-cert-verify: false
-
-- name: （双栈）香港ss-tcp
-  type: ss
-  server: hk2.020912.xyz
-  port: 24490
-  password: c0cwMnhUR015Sm1GdThuTnZTRUlrYlkxVzFXTktVMk4=
-  cipher: aes-256-gcm
-  udp: true
-
-- name: （双栈）香港trojan-tcp-tls
-  type: trojan
-  server: hk2.020912.xyz
-  port: 39530
-  password: HkEjxZUSV5
-  udp: true
-  sni: hk2.020912.xyz
-  skip-cert-verify: false
