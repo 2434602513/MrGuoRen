@@ -29,24 +29,24 @@ proxies:
 
 - name: 香港vmess-ws-tls
   type: vmess
-  server: cf.0sm.com
-  port: 2053
-  uuid: 988364b9-3cdb-401d-c752-2973c746d719
+  server: cf.0sm.com                        
+  port: 2053                                     
+  uuid: 988364b9-3cdb-401d-c752-2973c746d719       
   alterId: 0
   cipher: auto
   udp: true
   tls: true
   network: ws
-  servername: hk.020912.xyz
+  servername: hk.020912.xyz                    
   ws-opts:
-    path: "/guoren"
+    path: "/guoren"                             
     headers:
       Host: hk.020912.xyz
 
-- name: 香港ss-tcp
+- name: 香港ss-tcp                    
   type: ss
-  server: hk.020912.xyz
-  port: 42541
+  server: *.020912.xyz                        
+  port: 42541                                     
   password: ZnZ3Ykp4V1VDZVJERmxGcmgwYTNIejR5Yng3RTd3NXc=
   cipher: aes-256-gcm
   udp: true
