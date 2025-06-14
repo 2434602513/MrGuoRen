@@ -45,7 +45,7 @@ proxies:
 
 - name: 香港ss-tcp                    
   type: ss
-  server: *.020912.xyz                        
+  server: hk.020912.xyz                        
   port: 42541                                     
   password: ZnZ3Ykp4V1VDZVJERmxGcmgwYTNIejR5Yng3RTd3NXc=
   cipher: aes-256-gcm
