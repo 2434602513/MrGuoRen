@@ -60,7 +60,7 @@ proxies:
   udp: true
   network: ws
   cipher: auto
-  servername: hk.020912.xyz
+  servername: cf.0sm.com
   ws-opts:
     path: /guoren
     headers:
