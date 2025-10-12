@@ -53,7 +53,7 @@ proxies:
 
 - name: 香港vmess-ws
   type: vmess
-  server: hk.020912.xyz
+  server: cf.0sm.com
   port: 2083
   alterId: 0
   uuid: b243c540-c5b7-4614-f356-b84ca44a37a2
