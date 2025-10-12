@@ -53,14 +53,14 @@ proxies:
 
 - name: 香港vmess-ws
   type: vmess
-  server: cf.0sm.com
+  server: hk.020912.xyz
   port: 2083
   alterId: 0
   uuid: b243c540-c5b7-4614-f356-b84ca44a37a2
   udp: true
   network: ws
   cipher: auto
-  servername: cf.0sm.com
+  servername: hk.020912.xyz
   ws-opts:
     path: /guoren
     headers:
