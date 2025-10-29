@@ -68,13 +68,14 @@ proxies:
 
 - name: 香港2 vmess-ws
   type: vmess
-  server: hk2.020912.xyz
+  server: cf.0sm.com
   port: 2052
   alterId: 0
   uuid: 81655940-b58c-4d02-c375-0f017071f7c3
   udp: true
   network: ws
   cipher: auto
+  servername: hk2.020912.xyz  
   ws-opts:
     path: /guoren
   
