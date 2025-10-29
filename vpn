@@ -78,6 +78,8 @@ proxies:
   servername: hk2.020912.xyz  
   ws-opts:
     path: /guoren
+    headers:
+      Host: ku.020912.xyz
   
 - name: 香港2 vmess-tcp
   type: vmess
