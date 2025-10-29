@@ -27,7 +27,7 @@ dns:
 
 proxies:
 
-- name: 香港vmess-ws-tls
+- name: 香港 vmess-ws-tls
   type: vmess
   server: cf.0sm.com                        
   port: 2053                                     
@@ -43,7 +43,7 @@ proxies:
     headers:
       Host: hk.020912.xyz
 
-- name: 香港ss-tcp                    
+- name: 香港 ss-tcp                    
   type: ss
   server: hk.020912.xyz                        
   port: 42541                                     
@@ -51,10 +51,10 @@ proxies:
   cipher: aes-256-gcm
   udp: true
 
-- name: 香港vmess-ws
+- name: 香港 vmess-ws
   type: vmess
   server: hk.020912.xyz
-  port: 2083
+  port: 2082
   alterId: 0
   uuid: b243c540-c5b7-4614-f356-b84ca44a37a2
   udp: true
@@ -65,3 +65,26 @@ proxies:
     path: /guoren
     headers:
       Host: hk.020912.xyz
+
+- name: 香港2 vmess-ws
+  type: vmess
+  server: ku.020912.xyz
+  port: 2052
+  alterId: 0
+  uuid: 81655940-b58c-4d02-c375-0f017071f7c3
+  udp: true
+  network: ws
+  cipher: auto
+  ws-opts:
+    path: /guoren
+  
+- name: 香港2 vmess-tcp
+  type: vmess
+  server: ku.020912.xyz
+  port: 25856
+  alterId: 0
+  uuid: 132bcb42-8a47-45f8-ab9e-3897f71d774c
+  udp: true
+  network: tcp
+  cipher: auto
+
