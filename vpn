@@ -51,10 +51,10 @@ proxies:
   cipher: aes-256-gcm
   udp: true
 
-- name: 香港 vmess-ws
+- name: 香港 vmess-tcp
   type: vmess
   server: hk.020912.xyz
-  port:54321
+  port: 54321
   alterId: 0
   uuid: b243c540-c5b7-4614-f356-b84ca44a37a2
   udp: true
